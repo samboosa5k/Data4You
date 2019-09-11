@@ -13,13 +13,15 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
+/* HEADER */
+
 header {
   height: 64px;
   justify-content: space-between;
 }
 
-header, 
-main {
+header,
+.header__menubtn {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -31,19 +33,116 @@ main {
 }
 
 .header__menu,
+.header__menubtn,
 .header__filler {
   height: 64px;
   width: 64px;
 }
 
-main {
-  height: calc(100% - 96px);
-  /* transform: translate(0,-32px); */
-  justify-content: center;
+
+/* NAV__MENU */
+
+nav {
+  background-color: violet;
 }
 
-footer {
+nav > ul {
+  padding: 0;
+  margin: 0;
+}
+
+.menu__item {
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 1.25rem;
+}
+
+.nav__menu {
+  display: inline-block;
+  position: fixed;
+  width: 100%;
+  height: auto;
+}
+
+.nav__menu li {
+  list-style-type: none;
+  line-height: 1.5rem;
+}
+
+/* MAIN */
+
+main {
+  /* height: calc(100% - 96px); */
+  /* transform: translate(0,-32px); */
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.main__article {
+  padding: 32px;
+  width: 100%;
+}
+
+.article__home {
+  background-color: lavender;
+  height: 85vh;
+}
+
+/* .article__skills {
+  padding-top: 64px;
+} */
+
+.wideThumb__wrapper {
+  margin-top: 16px;
+  margin-left: auto ;
+  margin-right: auto ;
+  width: 100%;
+  height: auto;
+  max-width: 384px;
+}
+
+.article__wideThumb {
+  background-color: white;
+  box-shadow: 0 2px; 
+  min-height: 128px;
+}
+
+.aboutMe__wrapper {
+  text-align: center;
+  margin-left: auto ;
+  margin-right: auto ;
+  width: 100%;
+}
+
+.aboutMe__profilePicture {
+  display: inline-block;
+  background-color: white;
   position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 256px;
+  height: 256px;
+  min-width: 256px;
+  min-height: 256px;
+}
+
+.aboutMe__info {
+  display: inline-block;
+  background-color: white;
+}
+
+/* FOOTER */
+
+footer {
+/*   position: relative; */
   height: 32px;
-  /* margin-top: -32px; */
+}
+
+/* GENERAL STYLES */
+
+.hidden {
+  display: none;
 }

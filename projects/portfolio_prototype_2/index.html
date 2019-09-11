@@ -7,20 +7,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
     <header class="header" style="background-color: lightslategray;">
         <div class="header__filler"></div>
         <div class="header__logo">LOGO</div>
-        <div class="header__menu">
-            <object class="header__menu" data="img/hamburger.svg" type="image/svg+xml"></object>
-        </div>
+        </div><a href="#" onclick="openmenu()" class="header__menubtn">MENU</a>
     </header>
+    <nav class="nav__menu hidden" id="menu_id">
+        <ul>
+            <li class="menu__item">Home</li>
+            <li class="menu__item">Skills</li>
+            <li class="menu__item">Projects</li>
+            <li class="menu__item">About Me</li>
+            <li class="menu__item">Git & Linkedin</li>
+        </ul>
+    </nav>
     <main class="main" style="background-color: gainsboro;">
-        <div class="main__content">
-            This is my content.
-        </div>
+        <section class="main__article article__home article__home--mod">
+            <h1>HOME</h1>
+            <p>This is my HOME content.</p>
+            <p>Designed for a mobile/fullscreen image.</p>
+        </section>
+        <section class="main__article article__skills">
+            <h1>SKILLS</h1>
+            <p>This is my SKILLS content.</p>
+        </section>
+        <section class="main__article">
+            <h1>PROJECTS</h1>
+            <p>This is my PROJECTS content.</p>
+            <div class="wideThumb__wrapper">
+                <div class="article__wideThumb">Image</div>
+                <figcaption class="wideThumb__figCaption">Project 1: T.B.D</figcaption>
+            </div>
+            <div class="wideThumb__wrapper">
+                <div class="article__wideThumb">Image</div>
+                <figcaption class="wideThumb__figCaption">Project 2: Multi-user task-list</figcaption>
+            </div>
+            <div class="wideThumb__wrapper">
+                <div class="article__wideThumb">Image</div>
+                <figcaption class="wideThumb__figCaption">Project 3: Online grocery store</figcaption>
+            </div>
+        </section>
+        <section class="main__article">
+            <h1>ABOUT ME</h1>
+            <p>This is my ABOUT ME content.</p>
+            <div class="aboutMe__wrapper">
+                <div class="aboutMe__profilePicture">Profile picture</div>
+                <br>
+                <div class="aboutMe__info">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Detail:</th>
+                                <th>Info:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Name:</td>
+                                <td>Jasper</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section class="main__article">
+            <h1>GIT & LINKEDIN</h1>
+            <p>This is my CONTACT content.</p>
+        </section>
     </main>
     <footer class="footer" style="background-color: gold;">3</footer>
 </body>
