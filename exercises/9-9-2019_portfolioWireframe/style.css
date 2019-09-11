@@ -1,0 +1,14 @@
+/* Document wide styles */
+body {
+    font-family: "Verdana", Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+  }
+
+nav {
+  background-color: darkorchid;
+  height: 64px;
+}
+
+nav {
+  color: white;
+}
