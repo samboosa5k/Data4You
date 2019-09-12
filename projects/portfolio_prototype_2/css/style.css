@@ -3,6 +3,10 @@ https://css-tricks.com/a-couple-of-use-cases-for-calc/
 https://css-tricks.com/couple-takes-sticky-footer/
 */
 
+*{
+  box-sizing: border-box;
+}
+
 /* Make screen always 100% */
 body, 
 html { 

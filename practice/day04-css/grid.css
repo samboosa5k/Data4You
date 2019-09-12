@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    background-image: url("grid.png");
+    background-repeat: repeat;
+    /* border: 2px solid black; */
+  }
+
+.myBox {
+    background-color: rgba(180, 107, 156, 1);
+    padding: 1rem;
+    border: 1rem solid black;
+    margin: 0rem auto;
+    width: 15rem;
+    min-height: 6rem;
+    max-height: 15rem;
+    overflow: hidden;
+}

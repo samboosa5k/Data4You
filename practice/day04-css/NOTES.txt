@@ -1,0 +1,8 @@
+1. rework portfolio website template with grid background
+2. Do section height with :
+document.documentElement.clientHeight, window.innerHeight
+document.documentElement.clientWidth, window.innerWidth
+4. border box  is life
+5. Display: block = spread horizontally, and shrink vertically
+6. Display: inline = display elements next to each other => menu
+7. CTRL + ALT - DOWN == change multiple lines

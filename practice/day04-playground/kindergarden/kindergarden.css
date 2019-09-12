@@ -1,0 +1,121 @@
+/* 
+#########################################
+# GLOBAL                                #
+#########################################
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: auto;
+}
+
+/* 
+#########################################
+# MENU                                  #
+#########################################
+*/
+
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.nav__item {
+    padding: 0 1rem;
+    margin: 0.5rem;
+}
+
+/* 
+#########################################
+# MAIN                                  #
+#########################################
+*/
+
+.main__section {
+    min-height: 2rem;
+    padding: 5rem;
+}
+
+/* BANNER */
+
+.main__banner {
+    background-image: url("http://anuskasampedro.com/Websites/Belfast%20Kinderdarden/images/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 20rem;
+    color: white;
+}
+
+.main__banner > hr {
+    border-top: 0.1rem solid white;
+    border-bottom: 0.1rem solid white;
+}
+
+/* MISSION */
+
+.main__mission {
+    background-color: #FFE964;
+    text-align: center;
+}
+
+/* TEAM */
+
+.main__team {
+    background-color: #FF523D;
+    text-align: center;
+    color: white;
+}
+
+.team__card {
+    padding-top: 4rem;
+}
+
+.main__team img {
+    width: 33%;
+    max-width: 192px;
+    height: auto;
+}
+
+/* CONTACT */
+
+.main__contact {
+    background-color: #223C88;
+    text-align: center;
+    color: white;
+}
+
+/* 
+#########################################
+# MAIN  -   SPECIFIC                    #
+#########################################
+*/
+
+.main__2panel {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.main__2panel > div {
+    padding: 0 2rem;
+}
+
+/* 
+#########################################
+# FONTS                                  #
+#########################################
+*/
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+}
