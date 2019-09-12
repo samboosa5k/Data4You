@@ -1,0 +1,67 @@
+/* 
+################################
+#   LARGE SECTION              #
+################################
+*/
+
+html, 
+body,
+article {
+  width: 50rem;
+  margin: 0 auto;
+}
+
+html {
+  font-family: "Lato", Arial, sans-serif;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+section {
+  padding: 0.5rem 2rem;
+}
+
+/* 
+################################
+#   SPECIFIC SECTION           #
+################################
+*/
+
+
+.intro,
+.conclusion {
+  background-color: #D2D6EF;
+}
+
+/* 
+################################
+#   PARAGRAPH STYLING          #
+################################
+*/
+
+h1,
+h2 {
+  color: #23226C;
+}
+
+h1 {
+  text-align: center;
+  font-size: 240%;
+}
+
+h2 {
+  font-size: 180%;
+}
+
+p {
+  display: block;
+  text-align: justify;
+  color: #555555;
+}
+
+p strong {
+  color: black;
+}
+
