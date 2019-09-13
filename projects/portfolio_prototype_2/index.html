@@ -10,7 +10,7 @@
     <script type="text/javascript" src="script.js"></script>
 </head>
 
-<body onresize="getNewHeight()">
+<body onresize="getNewHeight()" onload="getNewHeight()">
     <header class="header" style="background-color: lightslategray;">
         <div class="header__filler"></div>
         <div class="header__logo">LOGO</div>
@@ -26,7 +26,7 @@
         </ul>
     </nav>
     <main class="main" style="background-color: gainsboro;">
-        <section class="main__article article__home article__home--mod">
+        <section class="main__article article__home article__home--mod" style="height:0;">
             <h1>HOME</h1>
             <p>This is my HOME content.</p>
             <p>Designed for a mobile/fullscreen image.</p>
@@ -34,6 +34,7 @@
         <section class="main__article article__skills">
             <h1>SKILLS</h1>
             <p>This is my SKILLS content.</p>
+            <p class="skills__list">HTML CSS JS PHP</p>
         </section>
         <section class="main__article">
             <h1>PROJECTS</h1>

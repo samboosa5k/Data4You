@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dunkly Product Launch</title>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Roboto&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            height: 100vh;
+            font-size: 18px;
+        }
+
+        body {
+            background-image: url("bg.svg");
+            background-size: cover;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100vw;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.438);
+            box-shadow: -4rem -4rem 4rem rgba(255, 255, 255, 0.438);
+            border-radius: 50%;
+        }
+
+        .main__article {
+            display: flex;
+            flex-wrap: wrap;
+            justify-items: center;
+            align-items: center;
+            /* padding-left: 2rem; */
+            padding-right: 2rem;
+        }
+
+        .article__container>h1 {
+            font-family: 'Gloria Hallelujah', cursive;
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .article__container>p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            max-width: 20rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="main__image"><img src="dunkly.png" alt="" class=""></div>
+        <div class="main__article">
+            <section class="article__container">
+                <h1>Meet Silvestr</h1>
+                <p>Silvestr is a plush cuddly elephant optimistic and hearty all the time, always ready to cheer you up and keep you company.</p>
+            </section>
+        </div>
+    </main>
+
+</body>
+
+</html>

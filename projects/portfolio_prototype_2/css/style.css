@@ -92,11 +92,15 @@ main {
 
 .article__home {
   background-color: lavender;
-  height: 85vh;
+  /* height: 85vh; */
 }
 
 /* .article__skills {
   padding-top: 64px;
+} */
+
+/* MAIN - Skills */
+/* .skills__list{
 } */
 
 .wideThumb__wrapper {
