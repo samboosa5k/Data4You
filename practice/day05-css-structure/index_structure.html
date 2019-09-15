@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            margin: 0;
+            background-color: gray;
+        }
+
+        .container {
+            font-size: 1rem;
+        }
+
+        .card {
+            min-width: 512px;
+            min-height: 128;
+            width: 512px;
+            height: auto;
+            margin: 1rem auto;
+            padding: 1rem;
+            background-color: white;
+            border: 1px dotted black;
+            box-shadow: 1rem 1rem black;
+            line-height: 150%;
+        }
+
+        .card__header {
+            margin: 0;
+            background-color: lightcoral;
+            font-size: 1.5rem;
+        }
+
+        .card__button {
+            margin-left: auto;
+            margin-right: 0;
+            text-align: right;
+        }
+
+        .card__like--selected {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 class="card__header">Header</h1>
+            <p>Card</p>
+            <div class="card__button">
+                <button class="card__like--selected">Like me senpai</button>
+            </div>
+        </div>
+        <div class="card">
+            <h1 class="card__header">Header</h1>
+            <p>Card</p>
+            <div class="card__button">
+                <button class="card__like">Like me senpai</button>
+            </div>
+        </div>
+        <div class="card">
+            <h1 class="card__header">Header</h1>
+            <p>Card</p>
+            <div class="card__button">
+                <button class="card__like">Like me senpai</button>
+            </div>
+        </div>
+        <div class="card">
+            <h1 class="card__header">Header</h1>
+            <p>Card</p>
+            <div class="card__button">
+                <button class="card__like">Like me senpai</button>
+            </div>
+        </div>
+        <div class="card">
+            <h1 class="card__header">Header</h1>
+            <p>Card</p>
+            <div class="card__button">
+                <button class="card__like">Like me senpai</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
