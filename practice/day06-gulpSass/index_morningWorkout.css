@@ -26,21 +26,21 @@ hr {
 /* SHARED ALIGNMENT */
 header,
 footer {
-    display: flex;
+/*     
     flex-wrap: nowrap;
     align-items: center;
+    max-height: 256px; */
 }
 
 /* MAIN ELEMENTS */
 header {
     width: 100vw;
-    height: 15vh;
+    height: 128px;
     min-height: 1rem;
     background-color: black;
 }
 
 .content__wrapper {
-    height: 70vh;
     display: flex;
     /* flex-wrap: wrap; */
 }
@@ -81,7 +81,6 @@ main p {
 
 footer {
     width: 100vw;
-    height: 15vh;
     min-height: 1rem;
     background-color: silver;
 }
