@@ -1,0 +1,27 @@
+{
+  "name": "day06-gulpScss",
+  "version": "1.0.0",
+  "description": "Gulp & SCSS practice directory",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "node -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samboosa5k/Data4You.git"
+  },
+  "keywords": [
+    "gulp",
+    "scss",
+    "node",
+    "npm"
+  ],
+  "author": "Jasper Verbon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samboosa5k/Data4You/issues"
+  },
+  "homepage": "https://github.com/samboosa5k/Data4You#readme"
+}
