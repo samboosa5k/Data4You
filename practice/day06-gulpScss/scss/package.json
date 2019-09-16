@@ -1,7 +1,7 @@
 {
-  "name": "day06-gulpScss",
+  "name": "day06-scss-quickstart",
   "version": "1.0.0",
-  "description": "Gulp & SCSS practice directory",
+  "description": "Gulp quickstart test",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {

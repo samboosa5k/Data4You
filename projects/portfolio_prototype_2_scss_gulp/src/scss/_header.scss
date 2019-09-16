@@ -1,0 +1,26 @@
+header {
+    position: relative;
+    height: 64px;
+    justify-content: space-between;
+    /* Z-index is essential */
+    z-index: 999;
+    background-color: black;
+    border-bottom: 2px dotted black;
+    box-shadow: 0 8px purple; 
+}
+
+header,
+.header {
+    
+    &__menuBtn {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+}
+
+.header__menuBtn {
+    div {
+
+    }
+}
