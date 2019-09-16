@@ -40,7 +40,7 @@ header {
   position: relative;
   height: 64px;
   justify-content: space-between;
-  z-index: 999;
+  /* z-index: 999; */
   background-color: black;
   border-bottom: 2px dotted black;
   box-shadow: 0 8px purple;
@@ -108,10 +108,11 @@ nav > ul {
 }
 
 .nav__menu {
-  display: inline-block;
-  position: fixed;
+  display: none;
+  /* Box model */
   width: 100%;
   height: auto;
+    
 }
 
 .nav__menu li {
@@ -132,20 +133,19 @@ nav > ul {
 }
 
 main {
-  max-width: 1664px;
+  /* max-width: 1664px; */
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.main__article {
-  padding: 32px;
+.main__segment {
   width: 100%;
   border-bottom: 2px dotted black;
 }
 
-.main__article h1 {
+.main__segment h1 {
   margin: 0;
 }
 
@@ -155,19 +155,18 @@ main {
 ################################
 */
 
-.article__home {
+.segment__home {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* z-index: -1; */
   background-image: url("../img/dunky.jpg");
-  background-position: center;
+  background-position: right 25% top 0;
   background-size: cover;
   /* Typography */
   text-align: center;
 }
 
-.article__home p {
+.segment__home p {
   margin: 0;
   font-size: 4rem;
   box-shadow: 0 8px white;
@@ -179,6 +178,10 @@ main {
 # SKILLS                       #
 ################################
 */
+
+.main__skills {
+  padding: 32px;
+}
 
 .skills__list {
   margin-left: 10vw;
@@ -203,16 +206,15 @@ main {
 ################################
 */
 
-.article__projects {
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-}
-
 .projects__wrapper {
   display: flex;
+  margin-bottom: 2rem;
+}
+
+.projects__center {
+  width: 832px;
+  display: flex;
   flex-wrap: wrap;
-  flex-grow: 6;
 }
 
 .wideThumb__wrapper {
@@ -239,6 +241,12 @@ main {
   transform: translatey(-2rem);
 }
 
+.projects__title {
+  padding-top: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
 /* 
 ################################
 # ABOUT ME                     #
@@ -262,15 +270,15 @@ main {
   text-align: center;
 }
 
-.aboutMe__column--left {
+.aboutMe__Left {
   background-image: url("../img/profile_pic.jpg");
   background-size: cover;
   height: 512px;
   background-origin: border-box;
-  background-position: right top;
+  background-position: top 20% right 25%;
 }
 
-.aboutMe__column--Right {
+.aboutMe__Right {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -299,15 +307,18 @@ main {
 # GITHUB & CONTACT             #
 ################################
 */
+.main__contact {
+  padding: 32px;
+}
 
-.main__article--icons {
+.contact__icons {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 2rem;
 }
 
-.main__article--icons img {
+.contact__icons img {
   width: 8rem;
   margin: 2rem;
 }
@@ -319,14 +330,63 @@ main {
 */
 
 footer {
-  padding: 0.5rem;
+  padding: 0.33rem;
   height: 32px;
   background-color: silver;
   text-align: center;
 }
 
-/* GENERAL STYLES */
+/* MENU - ANIMATION */
 
-.hidden {
-  display: none;
+@keyframes dropdown {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    background-color: rgba(0,0,0,0.3);
+  }
+  100% {
+    transform: translateY(0);
+    background-color: black;
+  }
 }
+
+@keyframes goUp {
+  0% {
+    transform: translateY(0);
+    background-color: black;
+    display: none;
+  }
+  50% {
+    background-color: rgba(0,0,0,0.3);
+  }
+  100% {
+    transform: translateY(-100%);
+    display: inline-block;
+  }
+}
+
+.nav__menu--active {
+  /* Visual */
+  display: inline-block;
+  position: fixed;
+  /* Animation */
+  animation-name: dropdown;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-direction: normal;  
+}
+
+.nav__menu--collapsed {
+  /* Visual */
+  display: inline-block;
+  position: fixed;
+  /* Animation */
+  animation-name: goUp;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-direction: normal;  
+  animation-fill-mode: forwards;
+}
+
+

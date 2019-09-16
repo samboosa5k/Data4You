@@ -1,5 +1,4 @@
 var height = document.documentElement.clientHeight;
-var width = document.documentElement.clientWidth;
 
 function createSkillBubbles() {
     var skillArray = document.getElementsByClassName( "skills__list" )[0].innerHTML.split( " " );
@@ -15,77 +14,50 @@ function createSkillBubbles() {
 
 //  FUNCTIONS
 function getNewHeight() {
-    var firstArticle = document.getElementsByClassName( "article__home" )[0];
+    var firstsegment = document.getElementsByClassName( "segment__home" )[0];
     var newHeight = height - 64 + "px";
-    firstArticle.style.height = newHeight;
+    firstsegment.style.height = newHeight;
     console.log( "New height calculated" );
 }
 
-function getWidthOffset() {
-    var single = 416;
-    var double = 832;
-    var triple = 1248;
-    var quadruple = 1664;
-    var width = document
-        .getElementsByClassName( "projects__wrapper" )[0]
-        .getClientRects()[0]
-        .width;
+function getSideWidth() {
+    //  Item selection
+    var numProjects = document.querySelectorAll( ".wideThumb__wrapper" ).length;
+    var side = document.querySelectorAll( ".projects__side" );
+    var center = document.getElementsByClassName( "projects__center" )[0];
 
-    var wrapper = document.getElementsByClassName( "projects__wrapper" )[0];
-    var newOffset;
+    //  Width calc
+    var width = window.screen.width;
+    var centerWidth = 416 *
+        ( Math.floor( width / 416 ) < numProjects ? Math.floor( width / 416 ) : numProjects );
 
-    if ( width > single && width < double ) {
-        var subtractor = 192;
-        var newOffset = width / 2 - subtractor - 16;
-    } else if ( width > double && width < triple ) {
-        var subtractor = 384;
-        var newOffset = width / 2 - subtractor - 32;
-    } else if ( width > triple && width < quadruple ) {
-        var subtractor = 576;
-        var newOffset = width / 2 - subtractor - 48;
-    } else if ( width > quadruple ) {
-        var subtractor = 768;
-        var newOffset = width / 2 - subtractor - 64;
+    //  Final width
+    var newWidth = ( width - centerWidth ) / 2;
+
+    //  Assigning width
+    center.style.width = centerWidth + "px";
+
+    for ( let i = 0; i < side.length; i++ ) {
+        side[i].style.width = newWidth + "px";
     }
 
-    wrapper.style.transform = `translateX(${newOffset}px)`;
-
-    console.log( wrapper.style.transform );
+    //  Logging
+    console.log( newWidth );
 }
-
-/* function getWidthOffset() {
-    var single = 416;
-    var double = 832;
-    var triple = 1248;
-    var quadruple = 1664;
-    var width = document
-        .getElementsByClassName( "projects__wrapper" )[0]
-        .getClientRects()[0]
-        .width;
-    var wrapper = document.getElementsByClassName( "projects__wrapper" )[0];
-
-    if ( width > single && width < double ) {
-        var subtractor = 192;
-        var newOffset = width / 2 - subtractor - 16;
-        wrapper.style.transform = `translateX(${newOffset}px)`;
-    } else if ( width > double && width < triple ) {
-        var subtractor = 384;
-        var newOffset = width / 2 - subtractor - 16 - 16;
-        wrapper.style.transform = `translateX(${newOffset}px)`;
-    } else if ( width > triple && width < quadruple ) {
-        var subtractor = 576;
-        var newOffset = width / 2 - subtractor - 16 - 16 - 16;
-        wrapper.style.transform = `translateX(${newOffset}px)`;
-    } else if ( width > quadruple ) {
-        var subtractor = 768;
-        var newOffset = width / 2 - subtractor - 16 - 16 - 16 - 16;
-        wrapper.style.transform = `translateX(${newOffset}px)`;
-    }
-
-    console.log( wrapper.style.transform );
-} */
 
 function openmenu() {
     var menu = document.getElementById( "menu_id" );
-    menu.classList.toggle( "hidden" );
+
+    switch ( menu.classList[1] ) {
+        case undefined:
+            console.log( "First click, baby!" );
+            menu.classList.toggle( "nav__menu--active" );
+            break;
+        default:
+            console.log( "Menu changed" );
+            menu.classList.toggle( "nav__menu--active" );
+            menu.classList.toggle( "nav__menu--collapsed" );
+            break;
+    }
+
 }
