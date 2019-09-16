@@ -1,0 +1,35 @@
+.main__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    @include flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main__segment {
+    width: 100%;
+    border-bottom: 2px dotted black;
+
+    h1 {
+        margin: 0;
+    }
+}
+
+.segment__home {
+    @include flex;
+    justify-content: center;
+    background-image: url("../img/dunky.jpg");
+    background-position: right 25% top 0;
+    background-size: cover;
+    text-align: center;
+
+    p {
+        margin: 0;
+        font-size: 4rem;
+        box-shadow: 0 8px white;
+        text-shadow: 0 3px 0.5px white;
+    }
+}

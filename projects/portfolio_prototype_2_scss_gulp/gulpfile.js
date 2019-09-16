@@ -119,6 +119,6 @@ function watchFiles( done ) {
 }
 
 // export tasks
-exports.publish = gulp.series( cleanAssets, publishHtml, publishFonts, publishImages );
+exports.publish = gulp.series( cleanAssets, publishHtml, publishFonts, publishImages, compileScss );
 exports.build = gulp.series( cleanAssets, publishHtmlProduction, publishFonts, publishImages, compileScssProduction );
 exports.watch = gulp.series( cleanAssets, publishHtml, serve, watchFiles );

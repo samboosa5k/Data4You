@@ -1,0 +1,44 @@
+@keyframes dropdown {
+    0% {
+        transform: translateY(-100%);
+        background-color: black;
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes goUp {
+    0% {
+        transform: translateY(0);
+        background-color: black;
+        display: none;
+    }
+
+    100% {
+        transform: translateY(-100%);
+        display: inline-block;
+    }
+}
+
+.nav__menu {
+    &--active {
+        display: inline-block;
+        position: fixed;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        animation-direction: normal;
+        animation-name: dropdown;
+    }
+
+    &--collapsed {
+        display: inline-block;
+        position: fixed;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        animation-direction: normal;
+        animation-name: goUp;
+        animation-fill-mode: forwards;
+    }
+}
