@@ -4,10 +4,15 @@
         margin-bottom: 2rem;
     }
 
+    &__side {
+        /* flex-grow: 1; */
+    }
+
     &__center {
-        width: 832px;
+        /* width: 416px; */
         display: flex;
         flex-wrap: wrap;
+        /* flex-grow: 0; */
     }
 
     &__title {
@@ -17,26 +22,108 @@
     }
 
     &__wideThumb {
-        min-width: 384px;
+        /* min-width: 384px;
         max-width: 384px;
-        min-height: 192px;
-        background-color: white;
+        min-height: 192px; 
+        background-color: white;*/
         box-shadow: 0 2px;
+    }
+
+    &__caption {
+
+        /* max-width: 384px; */
+        background-color: gray;
+        word-wrap: break-word;
     }
 }
 
 .wideThumb {
     &__wrapper {
+        /* min-width: 384px;
+max-width: 384px; */
+        min-height: 192px;
         height: auto;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        /* margin-top: 1rem;
+        margin-bottom: 1rem; */
+        margin-left: 1vw;
+        margin-right: 1vw;
+        background-color: white;
+
+        &--hidden {
+            visibility: hidden;
+        }
+
+        &--none {
+            display: none;
+        }
     }
 
-    &__figCaption {
-        padding: 0.5rem;
-        position: absolute;
-        transform: translatey(-2rem);
+}
+
+$breakpoint-single: 416px;
+
+$breakpoint-double: 768px;
+
+$breakpoint-triple: 1248px;
+
+@media (min-width: $breakpoint-single) {
+    .wideThumb__wrapper {
+        max-width: 90vw;
     }
 }
+
+@media (min-width: #{$breakpoint-single}) and (max-width: #{$breakpoint-double}) {
+    .projects {
+        &__center {
+            width: 95vw;
+            justify-content: space-between;
+        }
+
+        &__side {
+            flex-grow: 1;
+        }
+
+    }
+
+    .wideThumb__wrapper {
+        min-width: 40vw;
+        max-width: 45vw;
+    }
+}
+
+@media (min-width: #{$breakpoint-double}) and (max-width: #{$breakpoint-triple}) {
+    .projects {
+        &__center {
+            /* width: 95vw; */
+            justify-content: space-between;
+
+        }
+    }
+
+    .wideThumb__wrapper {
+        min-width: 25vw;
+        max-width: 29vw;
+    }
+}
+
+@media (min-width: #{$breakpoint-triple}) {
+    .projects {
+        &__center {
+            width: 98vw;
+            justify-content: space-between;
+        }
+    }
+
+    .wideThumb__wrapper {
+        min-width: 29vw;
+        max-width: 32.99vw;
+    }
+}
+
+/* @media (min-width: $breakpoint-triple) {
+    .projects {
+        &__center {
+            width: 1248px;
+        }
+    }
+} */
