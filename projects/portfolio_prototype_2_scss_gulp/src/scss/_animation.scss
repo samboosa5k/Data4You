@@ -1,3 +1,17 @@
+@keyframes fade {
+    0% {
+        background-color: black;
+    }
+
+    40% {
+        background-color: purple;
+    }
+
+    100% {
+        background-color: purple;
+    }
+}
+
 @keyframes dropdown {
     0% {
         transform: translateY(-100%);

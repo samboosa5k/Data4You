@@ -12,11 +12,20 @@ nav {
     display: none;
     width: 100%;
     height: auto;
+    /* transform: translateY(74px); */
 
     li {
         line-height: 1.5rem;
         list-style-type: none;
         border-bottom: 2px dotted purple;
+
+        &:hover {
+            background-color: purple;
+            animation-name: fade;
+            animation-duration: 1s;
+            animation-delay: 0s;
+            animation-direction: normal;
+        }
     }
 }
 
