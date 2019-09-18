@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    word-wrap: break-word;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    min-height: 100vh;
+    background: url(../img/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+
+    main {
+        flex-grow: 10;
+    }
+
+    .column-right {
+        flex-grow: 0;
+        /* Visuals */
+        background-color: rgba(255, 123, 0, 0.582);
+        /* Typography */
+        text-align: center;
+        color: white;
+
+        h1 {
+            text-transform: uppercase;
+        }
+
+        button {
+            /* Visuals */
+            color: white;
+            background-color: red;
+            border-radius: 20px;
+        }
+
+    }
+}
+
+$breakpoint-single: 640px;
+$breakpoint-smallWide: 768px;
+
+@media (max-width: $breakpoint-single) {
+    body {
+        flex-flow: column;
+    }
+
+    .column-right {
+        padding: 0;
+        width: 100vw;
+    }
+
+    h1 {
+        padding: 1rem;
+        font-size: 2rem;
+        /* margin-bottom: 1rem; */
+    }
+
+    p {
+        padding: 1rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        line-height: 1.75rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: $breakpoint-single) {
+    body {
+        flex-flow: row;
+    }
+
+    .column-right {
+        padding: 3rem;
+        min-width: 20rem;
+        max-width: 27vw;
+
+        h1 {
+            font-size: 4.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 2.3rem;
+        }
+
+        button {
+            font-size: 2rem;
+            padding: 2rem;
+            /* Visuals */
+            color: white;
+            background-color: red;
+            border-radius: 20px;
+        }
+    }
+}
+
+@media (min-width: #{$breakpoint-single}) and (min-width: #{$breakpoint-smallWide}) {}
