@@ -10,6 +10,15 @@ $breakpoint-triple: 1248px;
             flex-flow: column;
         }
     }
+
+    .wideThumb__wrapper {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .skills__list {
+        margin: 0;
+    }
 }
 
 @media (min-width: $breakpoint-single) {
@@ -69,8 +78,9 @@ $breakpoint-triple: 1248px;
 
     .wideThumb__wrapper {
         /* min-width: 29vw; */
-        max-width: 30vw;
+        width: 30vw;
     }
+
 }
 
 /* @media (min-width: $breakpoint-triple) {

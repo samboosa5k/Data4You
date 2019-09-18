@@ -10,6 +10,19 @@
 
     img {
         width: 8rem;
-        margin: 2rem;
+        margin: 1rem;
+        min-width: 20vw;
+    }
+
+    .underbar {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 8rem;
+        animation-duration: 0.5s;
+        animation-delay: 0s;
+        animation-direction: normal;
+        animation-name: underbar;
+        animation-fill-mode: forwards;
     }
 }

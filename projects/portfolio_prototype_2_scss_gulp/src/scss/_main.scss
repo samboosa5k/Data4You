@@ -26,10 +26,24 @@ main {
     background-size: cover;
     text-align: center;
 
-    p {
+    .home__title {
+        @include flex;
+        flex-flow: column;
+    }
+
+    h1 {
         margin: 0;
         font-size: 4rem;
         box-shadow: 0 8px white;
         text-shadow: 0 3px 0.5px white;
+    }
+
+    p {
+        padding: 0.5rem;
+        margin-top: 2rem;
+        font-size: 1.25rem;
+        /* Visuals */
+        background-color: black;
+        color: white;
     }
 }

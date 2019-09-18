@@ -36,6 +36,28 @@
     }
 }
 
+
+@keyframes underbar {
+    0% {
+        width: 1rem;
+        height: 0;
+        border-bottom: 0.2rem solid black;
+    }
+
+    50% {
+        height: 0;
+        border-bottom: 0.2rem solid purple;
+    }
+
+    100% {
+        width: 5rem;
+        height: 0;
+        border-bottom: 0.2rem solid magenta;
+        box-shadow: 0 1rem 0.4rem black;
+    }
+}
+
+
 .nav__menu {
     &--active {
         display: inline-block;

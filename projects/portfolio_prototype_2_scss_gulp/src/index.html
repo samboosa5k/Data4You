@@ -22,7 +22,7 @@
             </a>
         </div>
     </header>
-    <nav class="nav__menu" id="menu_id">
+    <nav class="nav__menu" id="menu_id" style="display: none;">
         <ul>
             <li class="menu__item">Empty</li>
             <li class="menu__item">Home</li>
@@ -36,20 +36,20 @@
     <div class="main__wrapper">
         <main class="main">
             <section class="main__segment segment__home" style="height:0;">
-                <div>
-                    <p>You just came to the site of a web-development legend
-                    <p>Designed for a mobile/fullscreen image.</p>
+                <div class="home__title">
+                    <h1>You just came to the site of a web-development legend</h1>
+                    <p>Created with love &lt;3</p>
                 </div>
             </section>
             <section class="main__segment main__skills">
-                <h1>SKILLS</h1>
+                <h2>SKILLS</h2>
                 <p>This is my SKILLS content.</p>
                 <div class="skills__list">HTML CSS BOOTSTRAP JS JQUERY PHP LARAVEL WORDPRESS GIT PHOTOSHOP ILLUSTRATOR GOOGLE-ANALYTICS ADWORDS TAG-MANAGER</div>
             </section>
             <!-- PROJECTS -->
             <section class="main__segment segment__projects">
                 <div class="projects__title">
-                    <h1>PROJECTS</h1>
+                    <h2>PROJECTS</h2>
                     <p>This is my PROJECTS content.</p>
                 </div>
 
@@ -128,7 +128,7 @@
             </div>
             <div class="aboutMe__column aboutMe__Right">
                 <div>
-                    <h1>ABOUT ME</h1>
+                    <h2>ABOUT ME</h2>
                     <p>Welcome to my humble web-development portfolio page, where you can see the projects I've completed and the ones I'm still working on.</p>
                     <p>Having a digital-art and design background, I apply my keen eye for pretty colors and obsessive organization to create amazing websites!</p>
                     <p>I also really love my dogs, and am passionate about Pizza, Belgian beer and Scottish whiskey.</p>
@@ -137,12 +137,21 @@
         </div>
     </section>
     <section class="contact">
-        <h1>GIT & LINKEDIN</h1>
+        <h2>GIT & LINKEDIN</h2>
         <p>This is my CONTACT content.</p>
         <div class="contact__icons">
-            <img src="img/github-logo.svg" alt="alternative_image_text">
-            <img src="img/linkedin-logo-button.svg" alt="alternative_image_text">
-            <img src="img/instagram-logo.svg" alt="alternative_image_text">
+            <div>
+                <img src="img/github-logo.svg" alt="github" class="github" onmouseover="contactHover(this);">
+                <div class="github__child"></div>
+            </div>
+            <div>
+                <img src="img/linkedin-logo-button.svg" alt="linkedin" class="linkedin" onmouseover="contactHover(this);">
+                <div class="linkedin__child"></div>
+            </div>
+            <div>
+                <img src="img/instagram-logo.svg" alt="instagram" class="instagram" onmouseover="contactHover(this);">
+                <div class="instagram__child"></div>
+            </div>
         </div>
     </section>
     </main>
