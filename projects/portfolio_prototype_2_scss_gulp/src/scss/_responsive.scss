@@ -19,6 +19,10 @@ $breakpoint-triple: 1248px;
     .skills__list {
         margin: 0;
     }
+
+    .contact__icons {
+        flex-flow: column;
+    }
 }
 
 @media (min-width: $breakpoint-single) {
