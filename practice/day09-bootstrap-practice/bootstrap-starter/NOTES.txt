@@ -1,0 +1,22 @@
+#############################################
+#   NOTES                                   #
+#############################################
+
+1. The following should be added to a MAIN scss file
+2. Only importt specific sections of Bootstrap
+
+    @import './node_modules/bootstrap/scss/PART_YOU_WANT_TO_IMPORT';
+
+3. Add additional variables/css in a base file:
+
+    _base.scss
+
+4. Change EXISTING bootstrap variables in SCSS for customization:
+
+    FOLDER: ./node_modules/bootstrap/scss/_variables.scss
+
+    e.g.
+
+    $space: 2rem !default;
+
+5. The variable needs to be copied into your own 'custom.bootstrap.variables.scss'  file e.g.

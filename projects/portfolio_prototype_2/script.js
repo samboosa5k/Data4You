@@ -1,30 +1,58 @@
+/* 
+###########################
+#   Variables             #
+###########################
+*/
+
 var height = document.documentElement.clientHeight;
 
+/* 
+###########################
+#   Helper functions      #
+###########################
+*/
+
+function easyGet( name ) {
+    return document.getElementsByClassName( name )[0];
+}
+
+
+/* 
+###########################
+#   Visuals               #
+###########################
+*/
+
 function createSkillBubbles() {
-    var skillArray = document.getElementsByClassName( "skills__list" )[0].innerHTML.split( " " );
+    var skillArray = easyGet( "skills__list" ).innerHTML.split( " " );
     var skillBubbles = "";
 
     for ( let i = 0; i < skillArray.length; i++ ) {
-        document.getElementsByClassName( "skills__list" )[0].innerHTML = "";
+        easyGet( "skills__list" ).innerHTML = "";
         skillBubbles += "<p class='skills__bubble'>" + skillArray[i] + "</p>";
     }
 
-    document.getElementsByClassName( "skills__list" )[0].innerHTML = skillBubbles;
+    easyGet( "skills__list" ).innerHTML = skillBubbles;
 }
 
-//  FUNCTIONS
+/* 
+###########################
+#   Layout                #
+###########################
+*/
+
 function getNewHeight() {
-    var firstsegment = document.getElementsByClassName( "segment__home" )[0];
+    var firstsegment = easyGet( "segment__home" );
     var newHeight = height - 64 + "px";
     firstsegment.style.height = newHeight;
     console.log( "New height calculated" );
 }
 
-function getSideWidth() {
+/* function getSideWidth() {
     //  Item selection
     var numProjects = document.querySelectorAll( ".wideThumb__wrapper" ).length;
     var side = document.querySelectorAll( ".projects__side" );
-    var center = document.getElementsByClassName( "projects__center" )[0];
+    var center = easyGet( "projects__center" );
 
     //  Width calc
     var width = window.screen.width;
@@ -43,10 +71,10 @@ function getSideWidth() {
 
     //  Logging
     console.log( newWidth );
-}
+} */
 
 function openmenu() {
-    var menu = document.getElementById( "menu_id" );
+    var menu = easyGet( "nav__menu" );
 
     switch ( menu.classList[1] ) {
         case undefined:
