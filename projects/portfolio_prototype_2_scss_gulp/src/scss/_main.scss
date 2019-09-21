@@ -1,6 +1,33 @@
 .main__wrapper {
     display: flex;
     justify-content: center;
+
+    .scroll-indicator {
+        display: flex;
+        position: fixed;
+        top: 45vh;
+        left: 0;
+        width: 2rem;
+        height: 100vh;
+        flex-direction: column;
+
+        &__sphere {
+            /* Layout */
+
+            /* Dimensions */
+            width: 0.5rem;
+            height: 0.5rem;
+            margin: 1rem;
+            border-radius: 2rem;
+            background-color: cyan;
+            /* Visuals */
+            z-index: 999;
+
+            &--active {
+                background-color: magenta;
+            }
+        }
+    }
 }
 
 main {
