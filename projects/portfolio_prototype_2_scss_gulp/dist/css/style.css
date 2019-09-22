@@ -144,13 +144,14 @@ nav {
     .main__wrapper .scroll-indicator__sphere {
       /* Layout */
       /* Dimensions */
-      width: 0.5rem;
-      height: 0.5rem;
+      width: .8rem;
+      height: .8rem;
       margin: 1rem;
       border-radius: 2rem;
       background-color: cyan;
       /* Visuals */
-      z-index: 999; }
+      z-index: 999;
+      border: 0.1rem solid purple; }
       .main__wrapper .scroll-indicator__sphere--active {
         background-color: magenta; }
 
@@ -172,10 +173,11 @@ main {
   display: -webkit-flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../img/dunky.jpg");
+  background-image: url("../img/dunky.svg");
   background-position: right 25% top 0;
-  background-size: cover;
-  text-align: center; }
+  background-size: 25% 100%;
+  text-align: center;
+  /* background-color: black; */ }
   .segment__home .home__title {
     display: flex;
     display: -webkit-flex;
@@ -185,7 +187,9 @@ main {
     margin: 0;
     font-size: 4rem;
     box-shadow: 0 8px white;
-    text-shadow: 0 3px 0.5px white; }
+    text-shadow: 0 3px .5px #000;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white; }
   .segment__home p {
     padding: 0.5rem;
     margin-top: 2rem;
