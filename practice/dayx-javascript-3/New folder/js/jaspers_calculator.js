@@ -8,6 +8,33 @@ const storage = {
     }
 }
 
+const doMath = ( opParam ) => {
+    if ( calc.operator === undefined ) {
+        calc.operator = "opParam";
+    } else if ( storage.inMemory === 0 && storage.result !== 0 ) {
+        calc.operator = "opParam";
+        storage.inMemory = storage.result;
+        storage.onScreen = 0;
+    } else {
+        let result;
+        switch ( opParam ) {
+            case "Add":
+                result = storage.onScreen + storage.inMemory;
+                break;
+            case "Multiply":
+                result = storage.onScreen * storage.inMemory;
+            case "Divide":
+                result = storage.inMemory / storage.onScreen;
+            case "Subtract":
+                result = storage.inMemory - storage.onScreen;
+        }
+
+        storage.result = result;
+        storage.onScreen = sum;
+        storage.inMemory = 0;
+    }
+}
+
 const calc = {
     operator: undefined,
 
