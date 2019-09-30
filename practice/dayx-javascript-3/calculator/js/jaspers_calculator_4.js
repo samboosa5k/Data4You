@@ -5,8 +5,10 @@ const storage = {
     result: 0,
 
     initialize( initialValue ) {
-        this.result = initialValue;
+        this.result = ( parseInt( initialValue ) ) ? initialValue : 0;
         this.input = 0;
+        this.memory = 0;
+        this.previous = 0;
         calc.pre = "Initialized";
     }
 
@@ -75,12 +77,21 @@ const calc = {
         if ( input !== null && repeat === false ) {
             this.pre = "Subtract";
             storage.previous = input;
-            storage.result -= input;
+            storage.result = storage.result - input;
         } else if ( this.history[this.history.length - 2] === true ) {
-            storage.memory -= storage.previous;
+            storage.memory = storage.memory - storage.previous;
             storage.result = storage.result - storage.previous;
         }
-        console.log( storage );
+        console.log( storage )
+        return storage.result;
+    },
+
+
+    clear() {
+        storage.previous = 0;
+        storage.result = 0;
+        storage.memory = 0;
+        this.repeat = 0;
     },
 
     equals() {
@@ -136,30 +147,19 @@ calc.equals();
 calc.add( 3, false );
 calc.equals();
 
-calc.add( 3, false );
+calc.divide( 7.3, false );
 calc.equals();
 
+storage.initialize();
+calc.subtract( 7.3, false );
+calc.equals();
+calc.subtract( 7.3, false );
 calc.multiply( 10, false );
-calc.equals();
-calc.equals();
-calc.equals();
+storage.initialize();
 
-calc.add( 250, false );
-calc.equals();
-
-calc.divide( 34, false );
-calc.equals();
-calc.equals();
-
-calc.subtract( 3.5, false );
-calc.equals();
-
-
-
-
-
-
-
-
+console.log( storage.input );
+console.log( storage.memory );
+console.log( storage.previous );
+console.log( storage.result );
 
 

@@ -42,15 +42,15 @@ console.log( roman.join( "" ) );
 
 // Refactored for freecodecamp
 
-var rom = ['M', 'CM', 'D', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
-var denom = [1000, 900, 500, 100, 90, 50, 40, 10, 9, 5, 4, 1];
-
 let ind = 0;
 
 let array = [];
 let roman = [];
 
 const convertToRoman = ( value ) => {
+    const rom = ['M', 'CM', 'D', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
+    const denom = [1000, 900, 500, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+
     if ( value >= denom[ind] ) {
         array.push( denom[ind] );
         roman.push( rom[ind] );
@@ -64,6 +64,6 @@ const convertToRoman = ( value ) => {
     return num;
 };
 
-console.log( typeof convertToRoman( 97 ) );
+console.log( typeof convertToRoman( 10 ) );
 
 console.log( roman.join( "" ).toString() );
