@@ -18,35 +18,49 @@ let shoppingList = [
 */
 
 const listManipulator = {
+    //  Object constants
+    listHTML: undefined,
 
+    //  Methods
     add( name, amount ) {
         const obj = { name: `'${name}'`, amount: parseInt( amount ) };
+        createEntry( this.listHTML, name, amount, listHTML.children.length );
         shoppingList.push( obj );
-        this.showAll();
     },
 
-    delete( id ) {
-        let listHTML = document.querySelector( '.list' );
-        delete listHTML.children[id].innerHTML;
-        shoppingList = shoppingList.splice( 1, id );
-        this.showAll();
+    toggleCheck( target ) {
+        target.classList.toggle( 'item--checked' );
+    },
+
+    deleteItem( target ) {
+        this.listHTML.removeChild( target.parentElement );
+        shoppingList.splice( target.id, 1 );
+
     },
 
     showAll() {
-        let listHTML = document.querySelector( '.list' );
-        listHTML.innerHTML = "";
+        const listBefore = document.querySelector( '.list' );
         for ( let i = 0; i < shoppingList.length; i++ ) {
-            listHTML.innerHTML += `
-                    <div class="item">
-                        <p class="item-title">${shoppingList[i]["name"]}</p>
-                        <p class="item-amount">${shoppingList[i]["amount"]}</p>
-                        <div id="${i}" class="item-remove">Click!</div>
-                    </div>
-            `;
+            createEntry( listBefore, shoppingList[i]["name"], shoppingList[i]["amount"], i );
         }
+        this.listHTML = document.querySelector( '.list' );
     }
 }
 
+/* 
+    HELPERS
+*/
+
+const createEntry = ( theList, name, amount, iterator ) => {
+    theList.innerHTML += `
+                    <div class="item">
+                        <p class="item-title">${name}</p>
+                        <p class="item-amount">${amount}</p>
+                        <p class="check-button">Check</p>
+                        <div id="${iterator}" class="item-remove">Remove!</div>
+                    </div>
+            `;
+}
 
 /* 
     DOM loaded
@@ -72,10 +86,13 @@ document.addEventListener( 'DOMContentLoaded', () => {
         }
     } );
 
+    //  Handle other clicks   
     document.addEventListener( 'click', ( e ) => {
-
         if ( e.target.classList[0] === 'item-remove' ) {
-            listManipulator.delete( e.target.id );
+            listManipulator.deleteItem( e.target );
+            console.log( e.target.id );
+        } else if ( e.target.classList[0] === 'check-button' ) {
+            listManipulator.toggleCheck( e.target.parentElement );
         };
 
 

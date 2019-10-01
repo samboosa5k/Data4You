@@ -24,6 +24,13 @@ body {
     box-shadow: 0.5rem 0.5rem 0 black;
 }
 
+.item--checked {
+    background-color: coral;
+    color: gray;
+    border: 1px dotted red;
+    text-decoration: line-through;
+}
+
 .form-container {
     display: flex;
     flex-direction: row;
