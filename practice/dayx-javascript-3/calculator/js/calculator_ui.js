@@ -4,10 +4,12 @@
 ######################
 */
 
-const mem = document.querySelector( '.calc__result' );
+const screen = document.querySelector( '.calc__result' );
 const input = document.querySelector( '.calc__input' );
 
 document.addEventListener( 'DOMContentLoaded', () => {
+    // Reset input field
+    input.value = 0;
     // Listen for input
     inputDetection();
     // Wait for operation button presses
@@ -40,6 +42,16 @@ const inputCallback = () => {
 
 let mathOp = undefined;
 
+const doMath = ( theOperation ) => {
+    if ( calc.pre === theOperation ) {
+        mathLogic( theOperation, storage.input, false )
+    }
+    input.value = 0;
+    mathOp = theOperation;
+    calc.pre = theOperation;
+    console.log( theOperation + ' clicked' );
+}
+
 const mathOpDetection = () => {
     document.addEventListener( 'click', ( e ) => {
         switch ( e.target.id ) {
@@ -48,45 +60,25 @@ const mathOpDetection = () => {
                 break;
 
             case 'btn-add':
-                if ( calc.pre === "Add" ) {
-                    mathLogic( "Add", storage.input, false )
-                }
-                mathOp = "Add";
-                calc.pre = "Add";
-                console.log( 'add clicked' );
+                doMath( "Add" );
                 break;
 
             case 'btn-divide':
-                if ( calc.pre === "Divide" ) {
-                    mathLogic( "Divide", storage.input, false )
-                }
-                mathOp = "Divide";
-                calc.pre = "Divide";
-                console.log( 'Divide clicked' );
+                doMath( "Divide" );
                 break;
 
             case 'btn-multiply':
-                if ( calc.pre === "Multiply" ) {
-                    mathLogic( "Multiply", storage.input, false )
-                }
-                mathOp = "Multiply";
-                calc.pre = "Multiply";
-                console.log( 'Multiply clicked' );
+                doMath( "Multiply" );
                 break;
 
             case 'btn-subtract':
-                if ( calc.pre === "Subtract" ) {
-                    mathLogic( "Subtract", storage.input, false )
-                }
-                mathOp = "Subtract";
-                calc.pre = "Subtract";
-                console.log( 'Subtract clicked' );
+                doMath( "Subtract" );
                 break;
-
 
             case 'btn-equals':
                 mathLogic( mathOp, storage.input, false );
                 calc.equals();
+                screen.textContent = storage.result;
                 console.log( storage.result );
                 break;
         }
