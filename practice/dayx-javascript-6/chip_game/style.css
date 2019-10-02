@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+/* The score area */
+#score-area {
+    /* height: 2rem; */
+    padding: 1rem;
+    background-color: black;
+}
+
+#score-area h1,
+#score-area h4 {
+    color: white;
+}
+
+/* The chips */
+div #stage-container {
+    color: white;
+    font-weight: bold;
+}
