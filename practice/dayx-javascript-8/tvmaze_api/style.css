@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-size: 16px;
+    background-color: black;
+}
+
+header h1,
+.season-header {
+    padding: 1rem;
+    color: white;
+}
+
+.season-header {
+    background-color: dimgray;
+}
+
+.episode-card {
+    display: flex;
+    flex-direction: row;
+    max-height: 140px;
+    margin: 0.25rem;
+    overflow: hidden;
+    background-color: white;
+}
+
+.episode-info {
+    width: 100%;
+    position: relative;
+    margin: 0.25rem;
+}
+
+.episode-info__bottom {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: darkslategray;
+}
+
+.episode-number {
+    margin-right: 1rem;
+}

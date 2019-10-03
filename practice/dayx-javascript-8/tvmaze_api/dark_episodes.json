@@ -1,0 +1,432 @@
+{
+  "id": 17861,
+  "url": "http://www.tvmaze.com/shows/17861/dark",
+  "name": "Dark",
+  "type": "Scripted",
+  "language": "German",
+  "genres": [
+    "Drama",
+    "Supernatural"
+  ],
+  "status": "Running",
+  "runtime": 60,
+  "premiered": "2017-12-01",
+  "officialSite": "https://www.netflix.com/title/80100172",
+  "schedule": {
+    "time": "",
+    "days": [
+      "Friday"
+    ]
+  },
+  "rating": {
+    "average": 8
+  },
+  "weight": 100,
+  "network": null,
+  "webChannel": {
+    "id": 1,
+    "name": "Netflix",
+    "country": null
+  },
+  "externals": {
+    "tvrage": null,
+    "thetvdb": 334824,
+    "imdb": "tt5753856"
+  },
+  "image": {
+    "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/201/502948.jpg",
+    "original": "http://static.tvmaze.com/uploads/images/original_untouched/201/502948.jpg"
+  },
+  "summary": "<p>A family saga with a supernatural twist, <b>Dark</b> set in a German town in present day where the disappearance of two young children exposes the double lives and fractured relationships among four families. In ten, hour-long episodes, the story takes on a supernatural twist that ties back to the same town in 1986.</p>",
+  "updated": 1561424813,
+  "_links": {
+    "self": {
+      "href": "http://api.tvmaze.com/shows/17861"
+    },
+    "previousepisode": {
+      "href": "http://api.tvmaze.com/episodes/1661806"
+    }
+  },
+  "_embedded": {
+    "episodes": [
+      {
+        "id": 1324842,
+        "url": "http://www.tvmaze.com/episodes/1324842/dark-1x01-geheimnisse",
+        "name": "Geheimnisse",
+        "season": 1,
+        "number": 1,
+        "airdate": "2017-12-01",
+        "airtime": "",
+        "airstamp": "2017-12-01T12:00:00+00:00",
+        "runtime": 60,
+        "image": {
+          "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/137/342662.jpg",
+          "original": "http://static.tvmaze.com/uploads/images/original_untouched/137/342662.jpg"
+        },
+        "summary": "<p>In 2019, a local boy's disappearance stokes fear in the residents of Winden, a small German town with a strange and tragic history.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/1324842"
+          }
+        }
+      },
+      {
+        "id": 1364594,
+        "url": "http://www.tvmaze.com/episodes/1364594/dark-1x02-lugen",
+        "name": "Lügen",
+        "season": 1,
+        "number": 2,
+        "airdate": "2017-12-01",
+        "airtime": "",
+        "airstamp": "2017-12-01T12:00:00+00:00",
+        "runtime": 60,
+        "image": {
+          "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/137/344225.jpg",
+          "original": "http://static.tvmaze.com/uploads/images/original_untouched/137/344225.jpg"
+        },
+        "summary": "<p>When a grim discovery leaves the police baffled, Ulrich seeks a search warrant for the power plant. A mysterious stranger checks into the hotel.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/1364594"
+          }
+        }
+      },
+      {
+        "id": 1364595,
+        "url": "http://www.tvmaze.com/episodes/1364595/dark-1x03-gestern-und-heute",
+        "name": "Gestern und Heute",
+        "season": 1,
+        "number": 3,
+        "airdate": "2017-12-01",
+        "airtime": "",
+        "airstamp": "2017-12-01T12:00:00+00:00",
+        "runtime": 60,
+        "image": {
+          "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/137/344853.jpg",
+          "original": "http://static.tvmaze.com/uploads/images/original_untouched/137/344853.jpg"
+        },
+        "summary": "<p>It's 1986, and Ulrich's brother, Mads, has been missing for a month. Confusion reigns as past and present intertwine.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/1364595"
+          }
+        }
+      },
+      {
+        "id": 1364596,
+        "url": "http://www.tvmaze.com/episodes/1364596/dark-1x04-doppelleben",
+        "name": "Doppelleben",
+        "season": 1,
+        "number": 4,
+        "airdate": "2017-12-01",
+        "airtime": "",
+        "airstamp": "2017-12-01T12:00:00+00:00",
+        "runtime": 60,
+        "image": {
+          "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/137/344889.jpg",
+          "original": "http://static.tvmaze.com/uploads/images/original_untouched/137/344889.jpg"
+        },
+        "summary": "<p>Bizarre occurrences give Charlotte a sense of déjà vu, and she suspects Peter is hiding something. Franziska snaps when Magnus confronts her.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/1364596"
+          }
+        }
+      },
+      {
+        "id": 1364597,
+        "url": "http://www.tvmaze.com/episodes/1364597/dark-1x05-wahrheiten",
+        "name": "Wahrheiten",
+        "season": 1,
+        "number": 5,
+        "airdate": "2017-12-01",
+        "airtime": "",
+        "airstamp": "2017-12-01T12:00:00+00:00",
+        "runtime": 60,
+        "image": {
+          "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/137/344914.jpg",
+          "original": "http://static.tvmaze.com/uploads/images/original_untouched/137/344914.jpg"
+        },
+        "summary": "<p>Hannah takes her obsession with Ulrich too far. The stranger asks Regina to deliver an important package. Martha is torn between Jonas and Bartosz.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/1364597"
+          }
+        }
+      },
+      {
+        "id": 1364598,
+        "url": "http://www.tvmaze.com/episodes/1364598/dark-1x06-sic-mundus-creatus-est",
+        "name": "Sic Mundus Creatus Est",
+        "season": 1,
+        "number": 6,
+        "airdate": "2017-12-01",
+        "airtime": "",
+        "airstamp": "2017-12-01T12:00:00+00:00",
+        "runtime": 60,
+        "image": {
+          "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/138/345674.jpg",
+          "original": "http://static.tvmaze.com/uploads/images/original_untouched/138/345674.jpg"
+        },
+        "summary": "<p>Ulrich looks to the past for answers and dredges up disturbing family secrets. Armed with new tools, Jonas probes the cave's murky depths.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/1364598"
+          }
+        }
+      },
+      {
+        "id": 1364599,
+        "url": "http://www.tvmaze.com/episodes/1364599/dark-1x07-kreuzwege",
+        "name": "Kreuzwege",
+        "season": 1,
+        "number": 7,
+        "airdate": "2017-12-01",
+        "airtime": "",
+        "airstamp": "2017-12-01T12:00:00+00:00",
+        "runtime": 60,
+        "image": {
+          "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/138/345695.jpg",
+          "original": "http://static.tvmaze.com/uploads/images/original_untouched/138/345695.jpg"
+        },
+        "summary": "<p>Ulrich questions a frail and frightened Helge in the nursing home. Jonas searches for Mikkel, but the stranger warns him about meddling with the past.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/1364599"
+          }
+        }
+      },
+      {
+        "id": 1364600,
+        "url": "http://www.tvmaze.com/episodes/1364600/dark-1x08-was-man-sat-das-wird-man-ernten",
+        "name": "Was man sät, das wird man ernten",
+        "season": 1,
+        "number": 8,
+        "airdate": "2017-12-01",
+        "airtime": "",
+        "airstamp": "2017-12-01T12:00:00+00:00",
+        "runtime": 60,
+        "image": {
+          "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/138/346925.jpg",
+          "original": "http://static.tvmaze.com/uploads/images/original_untouched/138/346925.jpg"
+        },
+        "summary": "<p>In 1953, the disfigured bodies of two boys are exhumed at a construction site, the future location of Winden's nuclear power plant.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/1364600"
+          }
+        }
+      },
+      {
+        "id": 1364601,
+        "url": "http://www.tvmaze.com/episodes/1364601/dark-1x09-alles-ist-jetzt",
+        "name": "Alles ist jetzt",
+        "season": 1,
+        "number": 9,
+        "airdate": "2017-12-01",
+        "airtime": "",
+        "airstamp": "2017-12-01T12:00:00+00:00",
+        "runtime": 60,
+        "image": {
+          "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/138/346959.jpg",
+          "original": "http://static.tvmaze.com/uploads/images/original_untouched/138/346959.jpg"
+        },
+        "summary": "<p>Ulrich runs afoul of the law, Helge tries to dodge Egon Tiedemann, Claudia harnesses the cave's powers, and Katharina lashes out at Hannah.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/1364601"
+          }
+        }
+      },
+      {
+        "id": 1364602,
+        "url": "http://www.tvmaze.com/episodes/1364602/dark-1x10-alpha-und-omega",
+        "name": "Alpha und Omega",
+        "season": 1,
+        "number": 10,
+        "airdate": "2017-12-01",
+        "airtime": "",
+        "airstamp": "2017-12-01T12:00:00+00:00",
+        "runtime": 60,
+        "image": {
+          "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/138/346983.jpg",
+          "original": "http://static.tvmaze.com/uploads/images/original_untouched/138/346983.jpg"
+        },
+        "summary": "<p>Peter gets a shock. Jonas learns the truth about his family, but there are more surprises still to come. Helge makes a sacrifice.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/1364602"
+          }
+        }
+      },
+      {
+        "id": 1646035,
+        "url": "http://www.tvmaze.com/episodes/1646035/dark-2x01-anfange-und-enden",
+        "name": "Anfänge und Enden",
+        "season": 2,
+        "number": 1,
+        "airdate": "2019-06-21",
+        "airtime": "",
+        "airstamp": "2019-06-21T12:00:00+00:00",
+        "runtime": 54,
+        "image": {
+          "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/202/506564.jpg",
+          "original": "http://static.tvmaze.com/uploads/images/original_untouched/202/506564.jpg"
+        },
+        "summary": "<p>Six months after the disappearances, the police form a task force. In 2052, Jonas learns that most of Winden perished in an apocalyptic event.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/1646035"
+          }
+        }
+      },
+      {
+        "id": 1661800,
+        "url": "http://www.tvmaze.com/episodes/1661800/dark-2x02-dunkle-materie",
+        "name": "Dunkle Materie",
+        "season": 2,
+        "number": 2,
+        "airdate": "2019-06-21",
+        "airtime": "",
+        "airstamp": "2019-06-21T12:00:00+00:00",
+        "runtime": 55,
+        "image": {
+          "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/202/506565.jpg",
+          "original": "http://static.tvmaze.com/uploads/images/original_untouched/202/506565.jpg"
+        },
+        "summary": "<p>Clausen and Charlotte interview Regina. The Stranger takes Hannah to 1987, where Claudia has an unnerving encounter and Egon visits an old nemesis.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/1661800"
+          }
+        }
+      },
+      {
+        "id": 1661801,
+        "url": "http://www.tvmaze.com/episodes/1661801/dark-2x03-gespenster",
+        "name": "Gespenster",
+        "season": 2,
+        "number": 3,
+        "airdate": "2019-06-21",
+        "airtime": "",
+        "airstamp": "2019-06-21T12:00:00+00:00",
+        "runtime": 56,
+        "image": {
+          "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/202/506566.jpg",
+          "original": "http://static.tvmaze.com/uploads/images/original_untouched/202/506566.jpg"
+        },
+        "summary": "<p>In 1954, a missing Helge returns, but he'll only speak to Noah. In 1987, Claudia brings the time machine to Tannhaus, and Egon questions Ulrich again.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/1661801"
+          }
+        }
+      },
+      {
+        "id": 1661802,
+        "url": "http://www.tvmaze.com/episodes/1661802/dark-2x04-die-reisenden",
+        "name": "Die Reisenden",
+        "season": 2,
+        "number": 4,
+        "airdate": "2019-06-21",
+        "airtime": "",
+        "airstamp": "2019-06-21T12:00:00+00:00",
+        "runtime": 61,
+        "image": {
+          "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/202/506567.jpg",
+          "original": "http://static.tvmaze.com/uploads/images/original_untouched/202/506567.jpg"
+        },
+        "summary": "<p>Jonas meets an ominous figure. While the kids comb the cave for answers, the adults gather in the bunker to share what they know about the travelers.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/1661802"
+          }
+        }
+      },
+      {
+        "id": 1661803,
+        "url": "http://www.tvmaze.com/episodes/1661803/dark-2x05-vom-suchen-und-finden",
+        "name": "Vom Suchen und Finden",
+        "season": 2,
+        "number": 5,
+        "airdate": "2019-06-21",
+        "airtime": "",
+        "airstamp": "2019-06-21T12:00:00+00:00",
+        "runtime": 56,
+        "image": {
+          "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/202/506568.jpg",
+          "original": "http://static.tvmaze.com/uploads/images/original_untouched/202/506568.jpg"
+        },
+        "summary": "<p>In 1987, Ulrich seizes an opportunity. The kids return to the cave with the time machine, and Jonas learns of a loophole that could change the future.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/1661803"
+          }
+        }
+      },
+      {
+        "id": 1661804,
+        "url": "http://www.tvmaze.com/episodes/1661804/dark-2x06-ein-unendlicher-kreis",
+        "name": "Ein unendlicher Kreis",
+        "season": 2,
+        "number": 6,
+        "airdate": "2019-06-21",
+        "airtime": "",
+        "airstamp": "2019-06-21T12:00:00+00:00",
+        "runtime": 55,
+        "image": {
+          "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/202/506569.jpg",
+          "original": "http://static.tvmaze.com/uploads/images/original_untouched/202/506569.jpg"
+        },
+        "summary": "<p>Armed with a plan to prevent the apocalypse, Jonas travels to 2019. During the Nielsens' anniversary party, Ulrich sneaks off with Hannah.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/1661804"
+          }
+        }
+      },
+      {
+        "id": 1661805,
+        "url": "http://www.tvmaze.com/episodes/1661805/dark-2x07-der-weisse-teufel",
+        "name": "Der weiße Teufel",
+        "season": 2,
+        "number": 7,
+        "airdate": "2019-06-21",
+        "airtime": "",
+        "airstamp": "2019-06-21T12:00:00+00:00",
+        "runtime": 58,
+        "image": {
+          "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/202/506570.jpg",
+          "original": "http://static.tvmaze.com/uploads/images/original_untouched/202/506570.jpg"
+        },
+        "summary": "<p>Martha meets the Stranger and learns his true identity. Claudia tries to prevent Egon's death in 1987. Hannah travels to 1954 to see Ulrich.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/1661805"
+          }
+        }
+      },
+      {
+        "id": 1661806,
+        "url": "http://www.tvmaze.com/episodes/1661806/dark-2x08-enden-und-anfange",
+        "name": "Enden und Anfänge",
+        "season": 2,
+        "number": 8,
+        "airdate": "2019-06-21",
+        "airtime": "",
+        "airstamp": "2019-06-21T12:00:00+00:00",
+        "runtime": 58,
+        "image": {
+          "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/202/506571.jpg",
+          "original": "http://static.tvmaze.com/uploads/images/original_untouched/202/506571.jpg"
+        },
+        "summary": "<p>On the day of the apocalypse, Clausen executes a search warrant at the power plant as Jonas and Claudia use the time machine to connect past and future.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/1661806"
+          }
+        }
+      }
+    ]
+  }
+}
