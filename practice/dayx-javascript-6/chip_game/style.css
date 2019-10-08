@@ -33,6 +33,7 @@ body {
     margin-right: 1rem;
     color: white;
     background-color: coral;
+    border-radius: 1rem;
 }
 
 /* The chips */

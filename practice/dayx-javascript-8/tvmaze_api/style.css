@@ -6,7 +6,8 @@
 
 html,
 body {
-    font-size: 16px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: black;
 }
 
@@ -38,6 +39,7 @@ header h1,
 .episode-info__bottom {
     display: flex;
     flex-direction: row;
+    padding: 0.5rem;
     width: 100%;
     position: absolute;
     bottom: 0;

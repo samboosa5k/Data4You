@@ -1,8 +1,9 @@
 /* 
     This can easily be made into a class:
-    - The class would contain an update score function
+    - The class would contain an increment/decrement score method, to update instance score
     - The class would also have a 'render' method, where the element is created and html added
     - The class would also have a 'mount' method, where the render output is added to the DOM
+    - The class would finally have an update interface method, where the score is updated visually
 */
 
 

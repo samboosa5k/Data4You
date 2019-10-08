@@ -90,7 +90,6 @@ document.addEventListener( 'DOMContentLoaded', () => {
     document.addEventListener( 'click', ( e ) => {
         if ( e.target.classList[0] === 'item-remove' ) {
             listManipulator.deleteItem( e.target );
-            console.log( e.target.id );
         } else if ( e.target.classList[0] === 'check-button' ) {
             listManipulator.toggleCheck( e.target.parentElement );
         };
