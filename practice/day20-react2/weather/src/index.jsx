@@ -5,8 +5,6 @@ import './style.css';
 import './index.html';
 import forecast from './forecast.js';
 
-console.log( forecast );
-
 class Weather extends React.Component {
     render() {
         return (
