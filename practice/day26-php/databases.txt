@@ -1,0 +1,19 @@
+ARTICLES - 
+    - author_id
+
+
+
+USERS - 
+    - AUTHORS
+    - USERS
+
+AUTHORS - 
+    - user_id
+    - article_id
+
+READERS - 
+    - user_id
+
+COMMENTS - 
+    - reader_id (many)
+    - article_id
