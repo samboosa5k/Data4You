@@ -1,0 +1,42 @@
+#####################################################################
+#   async COMPONENT DID MOUNT fetch                                 #
+#####################################################################
+
+constructor(props){
+    super(props);
+    this.state = {
+        users: '',
+    }
+}
+
+async componentDidMount(){
+    try{
+        const result = await fetch('the_url');
+        const data = await result.json();
+        this.setState({users: data});
+    } catch (err){
+        console.log(err);
+    }
+
+    //  ALTERNATIVE for TRY->catch
+    fetch()
+    .then()
+    .then()
+    .catch(err => {
+        console.log(err)
+    })
+}
+
+
+//  IF CONDITION
+{
+    this.state.loading && <div>Some component</div>
+}
+
+
+#####################################################################
+#   setState                                                        #
+#####################################################################
+
+//  Best way to toggle between current state and previous state
+setState(prevState  =>  {   stateYouWantToSet: !prevState   })
